@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Valtegara crea Temple: soporte profesional para la gestión administrativa de herencias cuando las familias más lo necesitan."
+    >
+    <meta property="og:title" content="Valtegara | Temple">
+    <meta
+      property="og:description"
+      content="Soporte profesional al alcance de las familias españolas en la gestión administrativa de herencias."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valtegara.com/">
+    <meta property="og:image" content="https://valtegara.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_ES">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valtegara | Temple">
+    <meta
+      name="twitter:description"
+      content="Soporte profesional al alcance de las familias españolas en la gestión administrativa de herencias."
+    >
+    <meta name="twitter:image" content="https://valtegara.com/assets/og-image.png">
+    <meta name="theme-color" content="#fbf1dc">
+    <title>Valtegara | Temple</title>
+    <link rel="canonical" href="https://valtegara.com/">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero" aria-labelledby="hero-title">
+        <header class="topbar">
+          <a class="logo-link" href="mailto:diegoserrano@valtegara.com" aria-label="Valtegara">
+            <img
+              src="assets/valtegara-logo-transparent.png"
+              alt="Valtegara"
+              width="1220"
+              height="360"
+              fetchpriority="high"
+            >
+          </a>
+          <a class="top-link" href="mailto:diegoserrano@valtegara.com?subject=Hablemos%20sobre%20Temple">
+            hablar con nosotros
+          </a>
+        </header>
+
+        <div class="hero-copy">
+          <p class="badge">Para funerarias y tanatorios</p>
+          <h1 id="hero-title">
+            Después del funeral, las familias no deberían quedarse solas.
+          </h1>
+          <p class="lede">
+            Temple gestiona la carga administrativa de una herencia al completo: documentos,
+            trámites y coordinación profesional. Un servicio exclusivo, ahora al alcance
+            de todos gracias a nuestra plataforma tecnológica.
+          </p>
+          <p class="partner-note">
+            Las mejores funerarias de España ya trabajan con Valtegara. Mejore el servicio
+            a sus clientes, sin coste.
+          </p>
+          <button class="cta" type="button" data-open-waitlist>
+            Únase a la lista de espera
+          </button>
+        </div>
+
+        <div class="benefit-row" aria-label="Beneficios de Temple">
+          <article class="benefit-card costs">
+            <span>Sin costes abusivos</span>
+            <p>Hasta 20.000 euros de ahorro frente a gestoras tradicionales.</p>
+          </article>
+          <article class="benefit-card calm">
+            <span>Sin dolores de cabeza</span>
+            <p>Gestionamos el proceso y acompañamos a la familia en todo momento.</p>
+          </article>
+          <article class="benefit-card clarity">
+            <span>Sin dramas familiares</span>
+            <p>Damos claridad y transparencia a todos los herederos.</p>
+          </article>
+        </div>
+
+        <footer class="bottom-strip">
+          <span>Temple, de Valtegara</span>
+        </footer>
+      </section>
+
+      <div class="modal" data-waitlist-modal aria-hidden="true">
+        <div class="modal-backdrop" data-close-waitlist></div>
+        <section class="waitlist-card" role="dialog" aria-modal="true" aria-labelledby="waitlist-title">
+          <button class="close-button" type="button" data-close-waitlist aria-label="Cerrar">×</button>
+          <p class="badge small">Lista de espera</p>
+          <h2 id="waitlist-title">Hablemos de Temple para su funeraria.</h2>
+          <form
+            class="waitlist-form"
+            data-waitlist-form
+            method="post"
+            target="hidden-google-form"
+            aria-describedby="privacy-note form-status"
+          >
+            <label>
+              Nombre
+              <input name="name" data-google-field="name" autocomplete="name" required>
+            </label>
+            <label>
+              Email
+              <input name="email" data-google-field="email" type="email" autocomplete="email" inputmode="email" required>
+            </label>
+            <label>
+              Funeraria o tanatorio
+              <input name="company" data-google-field="company" autocomplete="organization" required>
+            </label>
+            <label>
+              Teléfono
+              <input name="phone" data-google-field="phone" type="tel" autocomplete="tel" inputmode="tel">
+            </label>
+            <label>
+              Mensaje
+              <textarea name="message" data-google-field="message" rows="3"></textarea>
+            </label>
+            <button class="submit-button" type="submit">Enviar</button>
+            <p class="privacy-note" id="privacy-note">
+              Usaremos sus datos solo para contactar con usted sobre Temple.
+              <a href="privacidad.html">Política de privacidad</a>.
+            </p>
+            <p class="form-status" id="form-status" data-form-status aria-live="polite"></p>
+          </form>
+          <iframe class="hidden-frame" name="hidden-google-form" title="Google Form submission"></iframe>
+        </section>
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+  </body>
+</html>
