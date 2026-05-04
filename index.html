@@ -43,7 +43,7 @@
     <main class="page">
       <section class="hero" aria-labelledby="hero-title">
         <header class="topbar">
-          <a class="logo-link" href="mailto:diegoserrano@valtegara.com" aria-label="Valtegara">
+          <a class="logo-link" href="/" aria-label="Valtegara">
             <img
               src="assets/valtegara-logo-transparent.png"
               alt="Valtegara"
@@ -52,9 +52,7 @@
               fetchpriority="high"
             >
           </a>
-          <a class="top-link" href="mailto:diegoserrano@valtegara.com?subject=Hablemos%20sobre%20Temple">
-            hablar con nosotros
-          </a>
+          <button class="top-link" type="button" data-open-waitlist>Solicitar acceso</button>
         </header>
 
         <div class="hero-copy">
@@ -72,7 +70,7 @@
             a sus clientes, sin coste.
           </p>
           <button class="cta" type="button" data-open-waitlist>
-            Únase a la lista de espera
+            Ofrecer Temple a mis familias
           </button>
         </div>
 
@@ -101,7 +99,7 @@
         <section class="waitlist-card" role="dialog" aria-modal="true" aria-labelledby="waitlist-title">
           <button class="close-button" type="button" data-close-waitlist aria-label="Cerrar">×</button>
           <p class="badge small">Lista de espera</p>
-          <h2 id="waitlist-title">Hablemos de Temple para su funeraria.</h2>
+          <h2 id="waitlist-title">Solicite acceso para su funeraria o tanatorio.</h2>
           <form
             class="waitlist-form"
             data-waitlist-form
@@ -129,7 +127,7 @@
               Mensaje
               <textarea name="message" data-google-field="message" rows="3"></textarea>
             </label>
-            <button class="submit-button" type="submit">Enviar</button>
+            <button class="submit-button" type="submit">Enviar solicitud</button>
             <p class="privacy-note" id="privacy-note">
               Usaremos sus datos solo para contactar con usted sobre Temple.
               <a href="privacidad.html">Política de privacidad</a>.
