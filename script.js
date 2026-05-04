@@ -12,7 +12,7 @@ const WAITLIST_CONFIG = {
 };
 
 const modal = document.querySelector("[data-waitlist-modal]");
-const openButton = document.querySelector("[data-open-waitlist]");
+const openButtons = document.querySelectorAll("[data-open-waitlist]");
 const closeButtons = document.querySelectorAll("[data-close-waitlist]");
 const waitlistForm = document.querySelector("[data-waitlist-form]");
 const statusMessage = document.querySelector("[data-form-status]");
@@ -66,7 +66,7 @@ const buildFallbackMailto = (form) => {
   return `mailto:${WAITLIST_CONFIG.fallbackEmail}?subject=${subject}&body=${body}`;
 };
 
-openButton?.addEventListener("click", openModal);
+openButtons.forEach((button) => button.addEventListener("click", openModal));
 closeButtons.forEach((button) => button.addEventListener("click", closeModal));
 
 document.addEventListener("keydown", (event) => {
