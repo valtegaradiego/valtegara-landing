@@ -93,6 +93,7 @@ textarea {
   color: var(--ink);
   background: rgba(255, 248, 235, 0.62);
   cursor: pointer;
+  transform: translateY(-7px);
 }
 
 .hero-copy {
