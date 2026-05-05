@@ -687,15 +687,7 @@ h1 {
   }
 
   .hero::before {
-    position: fixed;
-    background-position: 88% top;
-    background-size: cover;
-    transform: none;
-  }
-
-  .page {
-    background-position: 88% top;
-    background-size: cover;
+    display: none;
   }
 
   .hero-copy {
