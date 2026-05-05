@@ -38,14 +38,32 @@ Before launch, submit one test lead from the landing page and confirm it appears
 
 ## Domain and search setup
 
-1. Publish the site to GitHub Pages.
-2. In GoDaddy DNS, point `valtegara.com` to GitHub Pages.
-3. Add `www.valtegara.com` as a CNAME to your GitHub Pages host.
-4. In GitHub Pages settings, set the custom domain to `valtegara.com`.
-5. Enable Enforce HTTPS once GitHub provisions the certificate.
-6. Add `https://valtegara.com/` to Google Search Console.
-7. Submit `https://valtegara.com/sitemap.xml`.
-8. Test link previews using the Open Graph image at `assets/og-image.png`.
+GitHub upload and Pages build are complete.
+
+Repository:
+
+- https://github.com/valtegaradiego/valtegara-landing
+
+GitHub Pages is configured from `main` and built successfully. The remaining step is DNS at GoDaddy.
+
+In GoDaddy DNS, replace the current apex `A` records for `valtegara.com` with GitHub Pages:
+
+- `A @ 185.199.108.153`
+- `A @ 185.199.109.153`
+- `A @ 185.199.110.153`
+- `A @ 185.199.111.153`
+
+Add or update the `www` record:
+
+- `CNAME www valtegaradiego.github.io`
+
+After DNS propagates:
+
+1. In GitHub Pages settings, confirm the custom domain is `valtegara.com`.
+2. Enable Enforce HTTPS once GitHub provisions the certificate.
+3. Add `https://valtegara.com/` to Google Search Console.
+4. Submit `https://valtegara.com/sitemap.xml`.
+5. Test link previews using the Open Graph image at `assets/og-image.png`.
 
 ## Before campaigns
 
